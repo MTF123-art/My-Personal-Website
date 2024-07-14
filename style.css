@@ -433,7 +433,7 @@ nav ul li a:hover {
     flex-direction: column;
     position: fixed;
     right: 20px;
-    top: 0;
+    top: -185px;
     justify-content: space-around;
     align-items: center;
     width: 50px;
@@ -448,6 +448,17 @@ nav ul li a:hover {
       rgba(16, 23, 58, 0.3)
     );
     backdrop-filter: blur(20px);
+    transition: all .3s;
+  }
+  ul.naik {
+    top : 0;
+  }
+  #arrow{
+    display: block;
+    transition: all .5s;
+  }
+  .putar {
+    rotate: 180deg;
   }
   .menu-alter li a span:hover {
     transition: all 0.3s;
