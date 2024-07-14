@@ -171,14 +171,6 @@
         </div>
         <div class="card autoshow">
           <div class="subcard">
-            <img src="portofolio/portofolio_6.jpeg" alt="" />
-          </div>
-          <p class="keterangan">
-            I got this certificate after taking cloud computing training from Alibaba Cloud. Here I learned how to utilize computer resources via the internet/cloud.
-          </p>
-        </div>
-        <div class="card autoshow">
-          <div class="subcard">
             <img src="portofolio/portofolio5.png" alt="" />
           </div>
           <p class="keterangan">
@@ -278,6 +270,11 @@
           <span class="material-symbols-outlined">call</span>
         </a>
       </li>
+      <li>
+        <a id="arrow">
+          <span class="material-symbols-outlined" style="font-size: 30px;">keyboard_double_arrow_down</span>
+        </a>
+      </li>
     </ul>
     <!-- menu alternatif end -->
 
@@ -298,6 +295,12 @@
           "*";
         window.open(url);
       }
+
+      const arrow = document.getElementById("arrow");
+      arrow.addEventListener("click", ()=>{
+        arrow.parentElement.parentElement.classList.toggle("naik");
+        arrow.classList.toggle('putar');
+      });
     </script>
     <!-- java script end -->
   </body>
